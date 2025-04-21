@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veridex Compliance Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F5E6C8;
+            color: #333;
+        }
+        header {
+            background: #1C1C1C;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover, .dropdown:hover .dropbtn {
+            background-color: #888;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .service-box {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #1C1C1C;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        button {
+            background-color: #444;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #666;
+        }
+        input, textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+    </style>
+    <script>
+        let submitted = false;
+        function hideForm() {
+            if (submitted) {
+                document.getElementById("contact-form").innerHTML = "<p>Thank you! Your message has been sent.</p>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Veridex Logo">
+        <h1>Veridex Compliance Services Pvt Ltd</h1>
+        <p>Your Trusted Partner in KYC & Transaction Monitoring</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <div class="dropdown">
+            <a href="#services" class="dropbtn">Services Offered</a>
+            <div class="dropdown-content">
+                <a href="#customer-onboarding">Customer Onboarding</a>
+                <a href="#aml">AML & Risk Screening</a>
+                <a href="#business-kyc">Business KYC</a>
+                <a href="#compliance">Ongoing Compliance</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We help businesses with end-to-end compliance solutions, from client onboarding to real-time transaction monitoring.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div id="customer-onboarding" class="service-box">
+            <h3>Customer Onboarding & Identity Verification</h3>
+            <ul>
+                <li>KYC – Fully automated identity verification</li>
+                <li>Document Verification – Validate passports, driver’s licenses, national IDs, etc.</li>
+                <li>Address Verification – Verify proof of residence using utility bills, bank statements, or geolocation data.</li>
+                <li>Age Verification – Ensure regulatory compliance for age-restricted services.</li>
+            </ul>
+        </div>
+        <div id="aml" class="service-box">
+            <h3>AML & Risk Screening</h3>
+            <ul>
+                <li>PEP Screening – Identify high-risk individuals linked to government or political roles.</li>
+                <li>Sanctions Screening – Cross-check customers against global sanctions lists.</li>
+                <li>Adverse Media Checks – Scan global news sources for negative mentions of customers.</li>
+                <li>Transaction Monitoring – Detect suspicious activities like money laundering and fraud.</li>
+            </ul>
+        </div>
+        <div id="business-kyc" class="service-box">
+            <h3>Business KYC & Corporate Verification</h3>
+            <ul>
+                <li>Business Entity Verification – Validate company registration details and legal status.</li>
+                <li>UBO Identification – Identify real owners behind corporate structures.</li>
+                <li>Financial Statements & Credit Reports – Assess corporate financial health.</li>
+            </ul>
+        </div>
+        <div id="compliance" class="service-box">
+            <h3>Ongoing Compliance & Regulatory Reporting</h3>
+            <ul>
+                <li>Continuous KYC Monitoring – Track changes in customer risk profiles in real time.</li>
+                <li>Regulatory Compliance Reporting – Automated reports for regulatory authorities.</li>
+                <li>Fraud Prevention & Identity Theft Detection – Prevent synthetic identity fraud and deepfake threats.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info.veridexcompliance@gmail.com | Phone: +91 8130477747</p>
+        
+<form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfAXyh2iMoy_7cIB_qqMtRS4s0LNmHPM5i26wc8O8FrW02WsQ/formResponse" 
+      method="POST" target="hidden_iframe" onsubmit="submitted=true; setTimeout(hideForm, 1000);">
+    <input type="text" name="entry.1136018808" placeholder="Your Name" required>
+    <input type="email" name="entry.237070121" placeholder="Your Email" required>
+    <textarea name="entry.1567916490" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Veridex Compliance Services Pvt Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

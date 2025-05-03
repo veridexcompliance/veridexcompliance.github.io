@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veridex Compliance Services</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #F5E6C8;
-            color: #333;
+            background: #ffffff;
+            color: #000000;
         }
+
         header {
-            background: #1C1C1C;
+            background: #7A1F29;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 20px;
         }
+
         header img {
             max-width: 150px;
             display: block;
-            margin: 0 auto 10px;
+            margin: 0 auto 15px;
         }
+
         nav {
-            background: #444;
+            background: #000000;
             padding: 10px;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
+
         nav a {
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
+
         nav a:hover, .dropdown:hover .dropbtn {
-            background-color: #888;
+            background-color: #7A1F29;
         }
+
         .dropdown {
             position: relative;
             display: inline-block;
         }
+
         .dropdown-content {
             display: none;
             position: absolute;
@@ -51,55 +59,100 @@
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
+
         .dropdown-content a {
             color: black;
             padding: 10px 20px;
             text-decoration: none;
             display: block;
         }
+
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color: #eee;
         }
+
         .dropdown:hover .dropdown-content {
             display: block;
         }
+
         section {
-            padding: 50px;
+            padding: 60px 20px;
             text-align: center;
         }
+
+        h2 {
+            color: #7A1F29;
+            font-weight: 600;
+        }
+
         .service-box {
             background: #fff;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: left;
         }
+
+        ul {
+            padding-left: 20px;
+        }
+
         footer {
-            background: #1C1C1C;
+            background: #000000;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
+
         button {
-            background-color: #444;
+            background-color: #7A1F29;
             color: white;
-            padding: 10px 15px;
+            padding: 12px 20px;
             border: none;
+            border-radius: 4px;
             cursor: pointer;
+            font-weight: 600;
         }
+
         button:hover {
-            background-color: #666;
+            background-color: #000000;
         }
+
         input, textarea {
             width: 100%;
-            max-width: 400px;
-            padding: 10px;
-            margin: 10px 0;
+            max-width: 500px;
+            padding: 12px;
+            margin: 12px 0;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-size: 1rem;
         }
+
         textarea {
             height: 100px;
+        }
+
+        .why-veridex-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .why-veridex-content ul {
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            header {
+                padding: 30px 10px;
+            }
         }
     </style>
     <script>
@@ -115,7 +168,7 @@
     <header>
         <img src="logo.jpg" alt="Veridex Logo">
         <h1>Veridex Compliance Services Pvt Ltd</h1>
-        <p>Your Trusted Partner in End-to-End KYC and Regulatory Assurance</p>
+        <p>Your Trusted Partner in End-to-End KYC and Regulatory Assurance</p>
     </header>
 
     <nav>
@@ -129,12 +182,13 @@
                 <a href="#compliance">Ongoing Compliance</a>
             </div>
         </div>
+        <a href="#why-veridex">Why Veridex</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Veridex Compliance Services Pvt Ltd delivers secure, scalable, and globally aligned KYC and compliance services. Our end-to-end approach ensures institutions can confidently meet evolving regulatory requirements while maintaining operational efficiency and client trust.</p>
+        <p style="max-width: 800px; margin: auto;">Veridex Compliance Services Pvt Ltd delivers secure, scalable, and globally aligned KYC and compliance services. Our end-to-end approach ensures institutions can confidently meet evolving regulatory requirements while maintaining operational efficiency and client trust.</p>
     </section>
 
     <section id="services">
@@ -175,20 +229,35 @@
         </div>
     </section>
 
+    <section id="why-veridex">
+        <h2>A Trusted Partner for Regulatory Excellence</h2>
+        <h4 style="color: #000;">Delivering Precision, Reliability, and Scalability in Compliance Operations</h4>
+        <div class="why-veridex-content">
+            <p>
+                At Veridex, we understand that compliance is a critical pillar of institutional trust and sustainable growth.
+                Our tailored services are designed to support each stage of the compliance while meeting the unique regulatory obligations of our clients.
+            </p>
+            <ul>
+                <li><strong>End-to-End KYC and KYB Management</strong> – Covering identity verification, documentation review, and onboarding decisions.</li>
+                <li><strong>Enhanced Due Diligence Capabilities</strong> – For higher-risk clients and complex onboarding cases.</li>
+                <li><strong>Cross-Border Regulatory Knowledge</strong> – Ensuring compliance across multiple jurisdictions.</li>
+                <li><strong>Timely Turnaround with Human-in-the-Loop Oversight</strong> – Balancing automation with expert review.</li>
+                <li><strong>Audit-Ready Documentation and Transparent Reporting</strong> – Supporting regulatory inspections and internal compliance functions.</li>
+            </ul>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: info.veridexcompliance@gmail.com | Phone: +91 7355783470</p>
-        
-<form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfAXyh2iMoy_7cIB_qqMtRS4s0LNmHPM5i26wc8O8FrW02WsQ/formResponse" 
-      method="POST" target="hidden_iframe" onsubmit="submitted=true; setTimeout(hideForm, 1000);">
-    <input type="text" name="entry.1136018808" placeholder="Your Name" required>
-    <input type="email" name="entry.237070121" placeholder="Your Email" required>
-    <textarea name="entry.1567916490" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-</form>
-
-<iframe name="hidden_iframe" style="display:none;"></iframe>
-
+        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfAXyh2iMoy_7cIB_qqMtRS4s0LNmHPM5i26wc8O8FrW02WsQ/formResponse" 
+              method="POST" target="hidden_iframe" onsubmit="submitted=true; setTimeout(hideForm, 1000);">
+            <input type="text" name="entry.1136018808" placeholder="Your Name" required>
+            <input type="email" name="entry.237070121" placeholder="Your Email" required>
+            <textarea name="entry.1567916490" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
     </section>
 
     <footer>
